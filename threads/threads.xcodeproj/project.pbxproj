@@ -17,6 +17,12 @@
 		CEA929FD2A8E77410070503C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA929FC2A8E77410070503C /* Assets.xcassets */; };
 		CEA92A352A8E798F0070503C /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A342A8E798F0070503C /* RegistrationView.swift */; };
 		CEA92A382A8E7A990070503C /* ThreadsTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A372A8E7A990070503C /* ThreadsTextFieldModifier.swift */; };
+		CEA92A3B2A9095800070503C /* ThreadsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A3A2A9095800070503C /* ThreadsTabView.swift */; };
+		CEA92A3E2A9099A80070503C /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A3D2A9099A80070503C /* FeedView.swift */; };
+		CEA92A432A9099D60070503C /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A422A9099D60070503C /* ExploreView.swift */; };
+		CEA92A482A9099FB0070503C /* CreateThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A472A9099FB0070503C /* CreateThreadView.swift */; };
+		CEA92A4C2A909A1A0070503C /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A4B2A909A1A0070503C /* ActivityView.swift */; };
+		CEA92A4F2A909A630070503C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A4E2A909A630070503C /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +56,12 @@
 		CEA929FC2A8E77410070503C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEA92A342A8E798F0070503C /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		CEA92A372A8E7A990070503C /* ThreadsTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTextFieldModifier.swift; sourceTree = "<group>"; };
+		CEA92A3A2A9095800070503C /* ThreadsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTabView.swift; sourceTree = "<group>"; };
+		CEA92A3D2A9099A80070503C /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		CEA92A422A9099D60070503C /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		CEA92A472A9099FB0070503C /* CreateThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadView.swift; sourceTree = "<group>"; };
+		CEA92A4B2A909A1A0070503C /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		CEA92A4E2A909A630070503C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,8 +160,14 @@
 		CEA929F22A8E75E00070503C /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				CEA929F82A8E760C0070503C /* Root */,
 				CEA929F72A8E76050070503C /* Authentication */,
+				CEA929F82A8E760C0070503C /* Root */,
+				CEA92A392A90955A0070503C /* TabBar */,
+				CEA92A3C2A90999E0070503C /* Feed */,
+				CEA92A402A9099C90070503C /* Explore */,
+				CEA92A442A9099E70070503C /* ThreadsCreation */,
+				CEA92A492A909A000070503C /* Activity */,
+				CEA92A4D2A909A5A0070503C /* Profile */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -214,6 +232,94 @@
 				CEA92A372A8E7A990070503C /* ThreadsTextFieldModifier.swift */,
 			);
 			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		CEA92A392A90955A0070503C /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				CEA92A3A2A9095800070503C /* ThreadsTabView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		CEA92A3C2A90999E0070503C /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				CEA92A3F2A9099AC0070503C /* Views */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		CEA92A3F2A9099AC0070503C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEA92A3D2A9099A80070503C /* FeedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEA92A402A9099C90070503C /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				CEA92A412A9099CD0070503C /* Views */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		CEA92A412A9099CD0070503C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEA92A422A9099D60070503C /* ExploreView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEA92A442A9099E70070503C /* ThreadsCreation */ = {
+			isa = PBXGroup;
+			children = (
+				CEA92A462A9099F00070503C /* Views */,
+			);
+			path = ThreadsCreation;
+			sourceTree = "<group>";
+		};
+		CEA92A462A9099F00070503C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEA92A472A9099FB0070503C /* CreateThreadView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEA92A492A909A000070503C /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				CEA92A4A2A909A110070503C /* Views */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		CEA92A4A2A909A110070503C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEA92A4B2A909A1A0070503C /* ActivityView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEA92A4D2A909A5A0070503C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CEA92A502A909A650070503C /* Views */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		CEA92A502A909A650070503C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEA92A4E2A909A630070503C /* ProfileView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,10 +452,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA92A3E2A9099A80070503C /* FeedView.swift in Sources */,
 				CEA929FB2A8E762B0070503C /* LoginView.swift in Sources */,
 				CEA929CA2A8E28460070503C /* ContentView.swift in Sources */,
+				CEA92A4C2A909A1A0070503C /* ActivityView.swift in Sources */,
+				CEA92A482A9099FB0070503C /* CreateThreadView.swift in Sources */,
+				CEA92A3B2A9095800070503C /* ThreadsTabView.swift in Sources */,
 				CEA92A382A8E7A990070503C /* ThreadsTextFieldModifier.swift in Sources */,
 				CEA929C82A8E28460070503C /* threadsApp.swift in Sources */,
+				CEA92A432A9099D60070503C /* ExploreView.swift in Sources */,
+				CEA92A4F2A909A630070503C /* ProfileView.swift in Sources */,
 				CEA92A352A8E798F0070503C /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
