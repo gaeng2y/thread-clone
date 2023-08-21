@@ -23,6 +23,7 @@
 		CEA92A482A9099FB0070503C /* CreateThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A472A9099FB0070503C /* CreateThreadView.swift */; };
 		CEA92A4C2A909A1A0070503C /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A4B2A909A1A0070503C /* ActivityView.swift */; };
 		CEA92A4F2A909A630070503C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92A4E2A909A630070503C /* ProfileView.swift */; };
+		CEDFA04A2A939C070097C681 /* ThreadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFA0492A939C070097C681 /* ThreadCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		CEA92A472A9099FB0070503C /* CreateThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadView.swift; sourceTree = "<group>"; };
 		CEA92A4B2A909A1A0070503C /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		CEA92A4E2A909A630070503C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CEDFA0492A939C070097C681 /* ThreadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				CEA92A3D2A9099A80070503C /* FeedView.swift */,
+				CEDFA0492A939C070097C681 /* ThreadCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 				CEA92A3E2A9099A80070503C /* FeedView.swift in Sources */,
 				CEA929FB2A8E762B0070503C /* LoginView.swift in Sources */,
 				CEA929CA2A8E28460070503C /* ContentView.swift in Sources */,
+				CEDFA04A2A939C070097C681 /* ThreadCell.swift in Sources */,
 				CEA92A4C2A909A1A0070503C /* ActivityView.swift in Sources */,
 				CEA92A482A9099FB0070503C /* CreateThreadView.swift in Sources */,
 				CEA92A3B2A9095800070503C /* ThreadsTabView.swift in Sources */,
