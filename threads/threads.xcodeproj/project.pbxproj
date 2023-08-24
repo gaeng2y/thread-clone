@@ -26,6 +26,7 @@
 		CEDFA04A2A939C070097C681 /* ThreadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFA0492A939C070097C681 /* ThreadCell.swift */; };
 		CEDFA04D2A9642DA0097C681 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFA04C2A9642DA0097C681 /* CircularProfileImageView.swift */; };
 		CEDFA04F2A96432D0097C681 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFA04E2A96432D0097C681 /* UserCell.swift */; };
+		CEDFA0522A97A7120097C681 /* ProfileThreadFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFA0512A97A7120097C681 /* ProfileThreadFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		CEDFA0492A939C070097C681 /* ThreadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadCell.swift; sourceTree = "<group>"; };
 		CEDFA04C2A9642DA0097C681 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		CEDFA04E2A96432D0097C681 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		CEDFA0512A97A7120097C681 /* ProfileThreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileThreadFilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +319,7 @@
 		CEA92A4D2A909A5A0070503C /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				CEDFA0502A97A7060097C681 /* Models */,
 				CEA92A502A909A650070503C /* Views */,
 			);
 			path = Profile;
@@ -337,6 +340,14 @@
 				CEDFA04E2A96432D0097C681 /* UserCell.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		CEDFA0502A97A7060097C681 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEDFA0512A97A7120097C681 /* ProfileThreadFilter.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,6 +488,7 @@
 				CEDFA04D2A9642DA0097C681 /* CircularProfileImageView.swift in Sources */,
 				CEDFA04F2A96432D0097C681 /* UserCell.swift in Sources */,
 				CEA92A482A9099FB0070503C /* CreateThreadView.swift in Sources */,
+				CEDFA0522A97A7120097C681 /* ProfileThreadFilter.swift in Sources */,
 				CEA92A3B2A9095800070503C /* ThreadsTabView.swift in Sources */,
 				CEA92A382A8E7A990070503C /* ThreadsTextFieldModifier.swift in Sources */,
 				CEA929C82A8E28460070503C /* threadsApp.swift in Sources */,
