@@ -27,6 +27,7 @@
 		CEDFA04D2A9642DA0097C681 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFA04C2A9642DA0097C681 /* CircularProfileImageView.swift */; };
 		CEDFA04F2A96432D0097C681 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFA04E2A96432D0097C681 /* UserCell.swift */; };
 		CEDFA0522A97A7120097C681 /* ProfileThreadFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFA0512A97A7120097C681 /* ProfileThreadFilter.swift */; };
+		CEDFA0562A99AF4B0097C681 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFA0552A99AF4B0097C681 /* EditProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		CEDFA04C2A9642DA0097C681 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		CEDFA04E2A96432D0097C681 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		CEDFA0512A97A7120097C681 /* ProfileThreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileThreadFilter.swift; sourceTree = "<group>"; };
+		CEDFA0552A99AF4B0097C681 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,6 +321,7 @@
 		CEA92A4D2A909A5A0070503C /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				CEDFA0532A99AF360097C681 /* EditProfile */,
 				CEDFA0502A97A7060097C681 /* Models */,
 				CEA92A502A909A650070503C /* Views */,
 			);
@@ -348,6 +351,22 @@
 				CEDFA0512A97A7120097C681 /* ProfileThreadFilter.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CEDFA0532A99AF360097C681 /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				CEDFA0542A99AF430097C681 /* Views */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		CEDFA0542A99AF430097C681 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEDFA0552A99AF4B0097C681 /* EditProfileView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -482,6 +501,7 @@
 			files = (
 				CEA92A3E2A9099A80070503C /* FeedView.swift in Sources */,
 				CEA929FB2A8E762B0070503C /* LoginView.swift in Sources */,
+				CEDFA0562A99AF4B0097C681 /* EditProfileView.swift in Sources */,
 				CEA929CA2A8E28460070503C /* ContentView.swift in Sources */,
 				CEDFA04A2A939C070097C681 /* ThreadCell.swift in Sources */,
 				CEA92A4C2A909A1A0070503C /* ActivityView.swift in Sources */,
