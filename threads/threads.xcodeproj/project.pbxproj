@@ -37,6 +37,9 @@
 		CEDFA0672A9DEF8B0097C681 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFA0662A9DEF8B0097C681 /* AuthService.swift */; };
 		CEDFA06B2A9F63370097C681 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFA06A2A9F63370097C681 /* ContentViewModel.swift */; };
 		CEDFA06D2A9F67660097C681 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFA06C2A9F67660097C681 /* LoginViewModel.swift */; };
+		CEDFA06F2AA0A3AE0097C681 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFA06E2AA0A3AE0097C681 /* User.swift */; };
+		CEDFA0712AA0D6D30097C681 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFA0702AA0D6D30097C681 /* UserService.swift */; };
+		CEDFA0742AA0D7840097C681 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFA0732AA0D7840097C681 /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +89,9 @@
 		CEDFA0662A9DEF8B0097C681 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		CEDFA06A2A9F63370097C681 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		CEDFA06C2A9F67660097C681 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		CEDFA06E2AA0A3AE0097C681 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CEDFA0702AA0D6D30097C681 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		CEDFA0732AA0D7840097C681 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +218,7 @@
 		CEA929F42A8E75EA0070503C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CEDFA06E2AA0A3AE0097C681 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -219,6 +226,7 @@
 		CEA929F52A8E75EF0070503C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CEDFA0702AA0D6D30097C681 /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -346,6 +354,7 @@
 				CEDFA0532A99AF360097C681 /* EditProfile */,
 				CEDFA0502A97A7060097C681 /* Models */,
 				CEA92A502A909A650070503C /* Views */,
+				CEDFA0722AA0D7750097C681 /* ViewModels */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -423,6 +432,14 @@
 				CEDFA06A2A9F63370097C681 /* ContentViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEDFA0722AA0D7750097C681 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CEDFA0732AA0D7840097C681 /* ProfileViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -571,6 +588,7 @@
 				CEDFA0672A9DEF8B0097C681 /* AuthService.swift in Sources */,
 				CEDFA0562A99AF4B0097C681 /* EditProfileView.swift in Sources */,
 				CEA929CA2A8E28460070503C /* ContentView.swift in Sources */,
+				CEDFA0712AA0D6D30097C681 /* UserService.swift in Sources */,
 				CEDFA04A2A939C070097C681 /* ThreadCell.swift in Sources */,
 				CEA92A4C2A909A1A0070503C /* ActivityView.swift in Sources */,
 				CEDFA06D2A9F67660097C681 /* LoginViewModel.swift in Sources */,
@@ -579,12 +597,14 @@
 				CEA92A482A9099FB0070503C /* CreateThreadView.swift in Sources */,
 				CEDFA0522A97A7120097C681 /* ProfileThreadFilter.swift in Sources */,
 				CEDFA06B2A9F63370097C681 /* ContentViewModel.swift in Sources */,
+				CEDFA0742AA0D7840097C681 /* ProfileViewModel.swift in Sources */,
 				CEA92A3B2A9095800070503C /* ThreadsTabView.swift in Sources */,
 				CEA92A382A8E7A990070503C /* ThreadsTextFieldModifier.swift in Sources */,
 				CEA929C82A8E28460070503C /* threadsApp.swift in Sources */,
 				CEA92A432A9099D60070503C /* ExploreView.swift in Sources */,
 				CEA92A4F2A909A630070503C /* ProfileView.swift in Sources */,
 				CEA92A352A8E798F0070503C /* RegistrationView.swift in Sources */,
+				CEDFA06F2AA0A3AE0097C681 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
