@@ -10,7 +10,7 @@ import FirebaseFirestoreSwift
 import Foundation
 
 class UserService {
-    @Published var currentUSer: User?
+    @Published var currentUser: User?
     
     static let shared = UserService()
     
@@ -20,11 +20,17 @@ class UserService {
     
     @MainActor
     func fetchCurrentUser() async throws {
-        guard let uid = Auth.auth().currentUser?.uid else { return }
-        let snapshot = try await Firestore.firestore().collection("users").document(uid).getDocument()
-        let user = try snapshot.data(as: User.self)
-        self.currentUSer = user
-        
-        print("DEBUG: User is \(user)")
+        do {
+            guard let uid = Auth.auth().currentUser?.uid else { return }
+            let snapshot = try await Firestore.firestore().collection("users").document(uid).getDocument()
+            let user = try snapshot.data(as: User.self)
+            self.currentUser = user
+            
+            print("DEBUG: User is \(user)")
+        }
+    }
+    
+    func reset() {
+        self.currentUser = nil
     }
 }

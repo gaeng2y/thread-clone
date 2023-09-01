@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProfileView: View {
-    @StateObject var viewMoedl = ProfileViewModel()
+    @StateObject var viewModel = ProfileViewModel()
     @State private var selectedFilter: ProfileThreadFilter = .threads
     @Namespace var animation
     
@@ -16,6 +16,8 @@ struct ProfileView: View {
         let count = CGFloat(ProfileThreadFilter.allCases.count)
         return UIScreen.main.bounds.width / count - 16
     }
+    
+    private var currentUser: User? { viewModel.currentUser }
     
     var body: some View {
         NavigationStack {
@@ -25,16 +27,18 @@ struct ProfileView: View {
                     HStack(alignment: .top) {
                         VStack(alignment: .leading, spacing: 12) {
                             VStack(alignment: .leading, spacing: 4) {
-                                Text("Harry Kane")
+                                Text(currentUser?.fullname ?? "")
                                     .font(.title2)
                                     .fontWeight(.semibold)
                                 
-                                Text("harry_kane")
+                                Text(currentUser?.username ?? "")
                                     .font(.subheadline)
                             }
                             
-                            Text("Bayern Munchen")
-                                .font(.footnote)
+                            if let bio = currentUser?.bio {
+                                Text(bio)
+                                    .font(.footnote)
+                            }
                             
                             Text("2 followers")
                                 .font(.caption)
