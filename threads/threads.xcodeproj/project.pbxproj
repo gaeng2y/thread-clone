@@ -52,6 +52,8 @@
 		CEDFA06F2AA0A3AE0097C681 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFA06E2AA0A3AE0097C681 /* User.swift */; };
 		CEDFA0712AA0D6D30097C681 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFA0702AA0D6D30097C681 /* UserService.swift */; };
 		CEDFA0742AA0D7840097C681 /* CurrentUserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDFA0732AA0D7840097C681 /* CurrentUserProfileViewModel.swift */; };
+		CEF122AB2AB1BD6E00CAFA01 /* UserContentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF122AA2AB1BD6E00CAFA01 /* UserContentListViewModel.swift */; };
+		CEF122AD2AB1BF2B00CAFA01 /* Timestamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF122AC2AB1BF2B00CAFA01 /* Timestamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +117,8 @@
 		CEDFA06E2AA0A3AE0097C681 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CEDFA0702AA0D6D30097C681 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		CEDFA0732AA0D7840097C681 /* CurrentUserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileViewModel.swift; sourceTree = "<group>"; };
+		CEF122AA2AB1BD6E00CAFA01 /* UserContentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContentListViewModel.swift; sourceTree = "<group>"; };
+		CEF122AC2AB1BF2B00CAFA01 /* Timestamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timestamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				CEBC1A8E2AA5FA5F00A88932 /* DeveloperPreview.swift */,
+				CEF122AC2AB1BF2B00CAFA01 /* Timestamp.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -443,8 +448,8 @@
 		CEBC1A952AA772F700A88932 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				CEBC1A962AA7730400A88932 /* ProfileHeaderView.swift */,
-				CEBC1A982AA7740100A88932 /* UserContentListView.swift */,
+				CEF122A82AB1BD5800CAFA01 /* View */,
+				CEF122A92AB1BD5B00CAFA01 /* ViewModel */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -529,6 +534,23 @@
 			isa = PBXGroup;
 			children = (
 				CEDFA06A2A9F63370097C681 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEF122A82AB1BD5800CAFA01 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC1A962AA7730400A88932 /* ProfileHeaderView.swift */,
+				CEBC1A982AA7740100A88932 /* UserContentListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEF122A92AB1BD5B00CAFA01 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEF122AA2AB1BD6E00CAFA01 /* UserContentListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -681,6 +703,7 @@
 				CEA929FB2A8E762B0070503C /* LoginView.swift in Sources */,
 				CEDFA0672A9DEF8B0097C681 /* AuthService.swift in Sources */,
 				CEDFA0562A99AF4B0097C681 /* EditProfileView.swift in Sources */,
+				CEF122AD2AB1BF2B00CAFA01 /* Timestamp.swift in Sources */,
 				CEBC1A9C2AA9F3AB00A88932 /* EditProfileViewModel.swift in Sources */,
 				CEA929CA2A8E28460070503C /* ContentView.swift in Sources */,
 				CEDFA0712AA0D6D30097C681 /* UserService.swift in Sources */,
@@ -689,6 +712,7 @@
 				CEBC1A992AA7740100A88932 /* UserContentListView.swift in Sources */,
 				CEDFA06D2A9F67660097C681 /* LoginViewModel.swift in Sources */,
 				CEDFA04D2A9642DA0097C681 /* CircularProfileImageView.swift in Sources */,
+				CEF122AB2AB1BD6E00CAFA01 /* UserContentListViewModel.swift in Sources */,
 				CEDFA04F2A96432D0097C681 /* UserCell.swift in Sources */,
 				CEBC1A8D2AA5EE7400A88932 /* ExploreViewModel.swift in Sources */,
 				CEA92A482A9099FB0070503C /* CreateThreadView.swift in Sources */,
